@@ -11,6 +11,7 @@
 		8712A98B15BBC66A00FD0BD7 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8712A98A15BBC66A00FD0BD7 /* ScreenSaver.framework */; };
 		8712A99515BBC66A00FD0BD7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8712A99315BBC66A00FD0BD7 /* InfoPlist.strings */; };
 		8712A99915BBC66A00FD0BD7 /* WikiStreamImageScreenSaverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8712A99815BBC66A00FD0BD7 /* WikiStreamImageScreenSaverView.m */; };
+		8712A9A315BBC84100FD0BD7 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8712A9A215BBC84000FD0BD7 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,11 +21,12 @@
 		8712A98D15BBC66A00FD0BD7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		8712A98E15BBC66A00FD0BD7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		8712A98F15BBC66A00FD0BD7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		8712A99215BBC66A00FD0BD7 /* WikiStreamImageScreenSaver-Info.plist */ = {isa = PBXFileReference; path = "WikiStreamImageScreenSaver-Info.plist"; sourceTree = "<group>"; };
+		8712A99215BBC66A00FD0BD7 /* WikiStreamImageScreenSaver-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WikiStreamImageScreenSaver-Info.plist"; sourceTree = "<group>"; };
 		8712A99415BBC66A00FD0BD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8712A99615BBC66A00FD0BD7 /* WikiStreamImageScreenSaver-Prefix.pch */ = {isa = PBXFileReference; path = "WikiStreamImageScreenSaver-Prefix.pch"; sourceTree = "<group>"; };
-		8712A99715BBC66A00FD0BD7 /* WikiStreamImageScreenSaverView.h */ = {isa = PBXFileReference; path = WikiStreamImageScreenSaverView.h; sourceTree = "<group>"; };
+		8712A99615BBC66A00FD0BD7 /* WikiStreamImageScreenSaver-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WikiStreamImageScreenSaver-Prefix.pch"; sourceTree = "<group>"; };
+		8712A99715BBC66A00FD0BD7 /* WikiStreamImageScreenSaverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WikiStreamImageScreenSaverView.h; sourceTree = "<group>"; };
 		8712A99815BBC66A00FD0BD7 /* WikiStreamImageScreenSaverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WikiStreamImageScreenSaverView.m; sourceTree = "<group>"; };
+		8712A9A215BBC84000FD0BD7 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8712A9A315BBC84100FD0BD7 /* WebKit.framework in Frameworks */,
 				8712A98915BBC66A00FD0BD7 /* Cocoa.framework in Frameworks */,
 				8712A98B15BBC66A00FD0BD7 /* ScreenSaver.framework in Frameworks */,
 			);
@@ -43,6 +46,7 @@
 		8712A97815BBC66900FD0BD7 = {
 			isa = PBXGroup;
 			children = (
+				8712A9A215BBC84000FD0BD7 /* WebKit.framework */,
 				8712A99015BBC66A00FD0BD7 /* WikiStreamImageScreenSaver */,
 				8712A98715BBC66A00FD0BD7 /* Frameworks */,
 				8712A98615BBC66A00FD0BD7 /* Products */,
