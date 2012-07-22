@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8712A98915BBC66A00FD0BD7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8712A98815BBC66A00FD0BD7 /* Cocoa.framework */; };
+		8712A98B15BBC66A00FD0BD7 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8712A98A15BBC66A00FD0BD7 /* ScreenSaver.framework */; };
+		8712A99515BBC66A00FD0BD7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8712A99315BBC66A00FD0BD7 /* InfoPlist.strings */; };
+		8712A99915BBC66A00FD0BD7 /* WikiStreamImageScreenSaverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8712A99815BBC66A00FD0BD7 /* WikiStreamImageScreenSaverView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8712A98515BBC66A00FD0BD7 /* WikiStreamImageScreenSaver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WikiStreamImageScreenSaver.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		8712A98815BBC66A00FD0BD7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		8712A98A15BBC66A00FD0BD7 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
+		8712A98D15BBC66A00FD0BD7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		8712A98E15BBC66A00FD0BD7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8712A98F15BBC66A00FD0BD7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8712A99215BBC66A00FD0BD7 /* WikiStreamImageScreenSaver-Info.plist */ = {isa = PBXFileReference; path = "WikiStreamImageScreenSaver-Info.plist"; sourceTree = "<group>"; };
+		8712A99415BBC66A00FD0BD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8712A99615BBC66A00FD0BD7 /* WikiStreamImageScreenSaver-Prefix.pch */ = {isa = PBXFileReference; path = "WikiStreamImageScreenSaver-Prefix.pch"; sourceTree = "<group>"; };
+		8712A99715BBC66A00FD0BD7 /* WikiStreamImageScreenSaverView.h */ = {isa = PBXFileReference; path = WikiStreamImageScreenSaverView.h; sourceTree = "<group>"; };
+		8712A99815BBC66A00FD0BD7 /* WikiStreamImageScreenSaverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WikiStreamImageScreenSaverView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8712A98015BBC66A00FD0BD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8712A98915BBC66A00FD0BD7 /* Cocoa.framework in Frameworks */,
+				8712A98B15BBC66A00FD0BD7 /* ScreenSaver.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8712A97815BBC66900FD0BD7 = {
+			isa = PBXGroup;
+			children = (
+				8712A99015BBC66A00FD0BD7 /* WikiStreamImageScreenSaver */,
+				8712A98715BBC66A00FD0BD7 /* Frameworks */,
+				8712A98615BBC66A00FD0BD7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8712A98615BBC66A00FD0BD7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8712A98515BBC66A00FD0BD7 /* WikiStreamImageScreenSaver.saver */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8712A98715BBC66A00FD0BD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8712A98815BBC66A00FD0BD7 /* Cocoa.framework */,
+				8712A98A15BBC66A00FD0BD7 /* ScreenSaver.framework */,
+				8712A98C15BBC66A00FD0BD7 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8712A98C15BBC66A00FD0BD7 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8712A98D15BBC66A00FD0BD7 /* AppKit.framework */,
+				8712A98E15BBC66A00FD0BD7 /* CoreData.framework */,
+				8712A98F15BBC66A00FD0BD7 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		8712A99015BBC66A00FD0BD7 /* WikiStreamImageScreenSaver */ = {
+			isa = PBXGroup;
+			children = (
+				8712A99715BBC66A00FD0BD7 /* WikiStreamImageScreenSaverView.h */,
+				8712A99815BBC66A00FD0BD7 /* WikiStreamImageScreenSaverView.m */,
+				8712A99115BBC66A00FD0BD7 /* Supporting Files */,
+			);
+			path = WikiStreamImageScreenSaver;
+			sourceTree = "<group>";
+		};
+		8712A99115BBC66A00FD0BD7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8712A99215BBC66A00FD0BD7 /* WikiStreamImageScreenSaver-Info.plist */,
+				8712A99315BBC66A00FD0BD7 /* InfoPlist.strings */,
+				8712A99615BBC66A00FD0BD7 /* WikiStreamImageScreenSaver-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8712A98115BBC66A00FD0BD7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8712A98415BBC66A00FD0BD7 /* WikiStreamImageScreenSaver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8712A99C15BBC66A00FD0BD7 /* Build configuration list for PBXNativeTarget "WikiStreamImageScreenSaver" */;
+			buildPhases = (
+				8712A97F15BBC66A00FD0BD7 /* Sources */,
+				8712A98015BBC66A00FD0BD7 /* Frameworks */,
+				8712A98115BBC66A00FD0BD7 /* Headers */,
+				8712A98215BBC66A00FD0BD7 /* Resources */,
+				8712A98315BBC66A00FD0BD7 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WikiStreamImageScreenSaver;
+			productName = WikiStreamImageScreenSaver;
+			productReference = 8712A98515BBC66A00FD0BD7 /* WikiStreamImageScreenSaver.saver */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8712A97A15BBC66900FD0BD7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 8712A97D15BBC66900FD0BD7 /* Build configuration list for PBXProject "WikiStreamImageScreenSaver" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8712A97815BBC66900FD0BD7;
+			productRefGroup = 8712A98615BBC66A00FD0BD7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8712A98415BBC66A00FD0BD7 /* WikiStreamImageScreenSaver */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8712A98215BBC66A00FD0BD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8712A99515BBC66A00FD0BD7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		8712A98315BBC66A00FD0BD7 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8712A97F15BBC66A00FD0BD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8712A99915BBC66A00FD0BD7 /* WikiStreamImageScreenSaverView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8712A99315BBC66A00FD0BD7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8712A99415BBC66A00FD0BD7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8712A99A15BBC66A00FD0BD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8712A99B15BBC66A00FD0BD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8712A99D15BBC66A00FD0BD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WikiStreamImageScreenSaver/WikiStreamImageScreenSaver-Prefix.pch";
+				INFOPLIST_FILE = "WikiStreamImageScreenSaver/WikiStreamImageScreenSaver-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Debug;
+		};
+		8712A99E15BBC66A00FD0BD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WikiStreamImageScreenSaver/WikiStreamImageScreenSaver-Prefix.pch";
+				INFOPLIST_FILE = "WikiStreamImageScreenSaver/WikiStreamImageScreenSaver-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8712A97D15BBC66900FD0BD7 /* Build configuration list for PBXProject "WikiStreamImageScreenSaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8712A99A15BBC66A00FD0BD7 /* Debug */,
+				8712A99B15BBC66A00FD0BD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8712A99C15BBC66A00FD0BD7 /* Build configuration list for PBXNativeTarget "WikiStreamImageScreenSaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8712A99D15BBC66A00FD0BD7 /* Debug */,
+				8712A99E15BBC66A00FD0BD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8712A97A15BBC66900FD0BD7 /* Project object */;
+}
