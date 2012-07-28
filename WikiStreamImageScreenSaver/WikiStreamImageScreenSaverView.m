@@ -8,7 +8,7 @@
 
 #import "WikiStreamImageScreenSaverView.h"
 
-#define URL @"http://wikistream.inkdroid.org/"
+#define SOURCE_URL @"http://wikistream.inkdroid.org/"
 
 // http://userstyles.org/styles/69744/wikistream-screensaver
 #define USER_STYLE @"#updatePanel, header, img[alt=\"Fork me on GitHub\"] { display: none; }"
@@ -25,10 +25,10 @@
         [_webView setPolicyDelegate:self];
         [_webView setUIDelegate:self];
         [_webView setEditingDelegate:self];
-        //[_webView setResourceLoadDelegate:self];
+        [_webView setResourceLoadDelegate:self];
         [_webView setAutoresizingMask:NSViewWidthSizable|NSViewHeightSizable];
         [_webView setAutoresizesSubviews:YES];
-        [_webView setMainFrameURL:URL];
+        [_webView setMainFrameURL:SOURCE_URL];
 
         {
             // via http://www.yoheim.net/blog.php?q=20120718
@@ -47,6 +47,8 @@
         
         [self setAnimationTimeInterval:1/30.0];
         [self addSubview:_webView];
+        _urls = [[NSMutableArray new] autorelease];
+        [self pushUrlToPasteboard:@"hello, world!!!!!"];
     }
     return self;
 }
@@ -57,6 +59,16 @@
     [_webView release];
 }
 */
+
+- (void)pushUrlToPasteboard:(NSString*)url {
+    [_urls addObject:url];
+    if ([_urls count] > 20)
+        [_urls removeObjectAtIndex:0];
+    
+    NSPasteboard *pasteboard = [NSPasteboard generalPasteboard];
+    [pasteboard clearContents];
+    [pasteboard writeObjects:_urls];
+}
 
 - (void)startAnimation
 {
@@ -114,6 +126,22 @@
 
 - (void)webViewClose:(WebView*)sender {
     return;
+}
+
+
+#pragma mark WebResourceLoadDelegate
+
+- (id)webView:(WebView*)sender identifierForInitiaRequest:(NSURLRequest*)request fromDataSource:(WebDataSource*)dataSource {
+    return request;
+}
+
+- (void)webView:(WebView*)sender resource:(id)identifier didReceiveResponse:(NSURLResponse*)response fromDataSource:(WebDataSource*)dataSource {
+    NSString* url = [[response URL] absoluteString];
+    NSString* wikimediaCommonsRequest = @"http://wikistream.inkdroid.org/commons-image/";
+    if ([url hasPrefix:wikimediaCommonsRequest]) {
+        NSString* path = [url substringFromIndex:[wikimediaCommonsRequest length]];
+        [self pushUrlToPasteboard:[NSString stringWithFormat:@"http://commons.wikimedia.org/wiki/%@", path]];
+    }
 }
 
 @end

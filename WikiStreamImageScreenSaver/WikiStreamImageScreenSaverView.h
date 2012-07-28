@@ -12,6 +12,9 @@
 @interface WikiStreamImageScreenSaverView : ScreenSaverView {
 @private
     WebView* _webView;
+    NSMutableArray* _urls;
 }
+
+- (void)pushUrlToPasteboard:(NSString*)url;
 
 @end
